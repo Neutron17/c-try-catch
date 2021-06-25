@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 3.8)
+set(CMAKE_C_COMPILER /usr/bin/gcc)
+project ("c")
+set(SOURCES main.c errHandler.c)
+set(HEADERS exception.h errHandler.h)
+add_executable (c ${SOURCES} ${HEADERS})
